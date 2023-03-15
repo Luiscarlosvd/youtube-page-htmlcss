@@ -4,43 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <header class="header-space">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" 
+            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" 
+            fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <line x1="4" y1="6" x2="20" y2="6" />
             <line x1="4" y1="12" x2="20" y2="12" />
             <line x1="4" y1="18" x2="20" y2="18" />
-        </svg>
-
-        <input class="buscador" type="text">
-
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-video-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            </svg>
+        </div>
+        <div>
+            <input class="buscador" type="text">
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-video-plus" 
+        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" 
+        fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
             <rect x="3" y="6" width="12" height="12" rx="2" />
             <line x1="7" y1="12" x2="11" y2="12" />
             <line x1="9" y1="10" x2="9" y2="14" />
-          </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" 
+        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" 
+        fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
             <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
-        </svg>
-        <img class="imagen-perfil" src="img/icono-imagen.jpg" alt="imagen-perfil">
+            </svg>
+            <img class="imagen-perfil" src="img/icono-imagen.jpg" alt="imagen-perfil">
+        </div>
     </header>
 
     <div class="container layout-shifter">
-        <div class="principal-area" style="background-color: blueviolet;">
-            <h1>contenido video-principal</h1>
+        <div class="principal-area" >
+            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/FlZuFh0KUvc" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <h1>Camilo: Tiny Desk (Home) Concert</h1>
         </div>
-        <aside class="side-bar" style="background-color: chartreuse;">
-            <h1>contenido side-bar</h1>
-        </aside>
 
+        <aside class="side-bar">
+            <h2>contenido side-bar</h2>
+            <section class="sidebar-videos">
+                <img class="miniaturas" src="img/miniatura1.webp" alt="Miniatura">
+                <div class="texto-miniaturas">
+                    <h4>Camilo - Pegao (Official Video)</h4>
+                    <p>Camilo</p>
+                    <p>49 M de Visitas - Hace 9 Meses</p>
+                </div>
+            </section>
+        </aside>
+    
         <section class="comments-area" style="background-color: aqua;">
             <h1>Comentarios</h1>
         </section>

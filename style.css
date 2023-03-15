@@ -2,26 +2,48 @@
     margin: 0;
     padding: 0;
 }
-header {
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-space {
     display: flex;
+    justify-content: space-between;
     background-color: #EAEAEA;
-    padding: 8px;
+    padding: 5px;
+
 }
 .icon{
-    margin-right: 15px;
     block-size: 35px;
 }
 .buscador {
-    justify-content: space-arou
+    min-width: 80px;
+    width: 130%;
+    padding: 3px;
+    margin-top: 5px;
 }
 .imagen-perfil {
     block-size: 40px;
     border-radius: 100%;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 95%;
     margin: 0 auto;
+}
+.youtube-video {
+    width: 100%;
+    padding-block: 10px;
+}
+.miniaturas {
+    width: 45%;
+    margin: 5px 5px;
+}
+.texto-miniaturas {
+    display: block;
+}
+.sidebar-videos {
+    display: flex;
 }
 
 @media (min-width: 1016px) {
@@ -33,7 +55,5 @@ header {
     }
     .side-bar {
         grid-area: sidebar;
-    }
-    
-   
+    } 
 }
